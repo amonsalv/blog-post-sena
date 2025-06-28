@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pública tu post</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+  <!-- Iconos de Material Icons -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body class="form-bg">
+  <main class="form-container">
+    <form class="post-form">
+      <h1 class="form-title">Pública tu post</h1>
+      <label for="author">Nombre del autor</label>
+      <input type="text" id="author" name="author" placeholder="Ana" required>
+
+      <label for="title">Título del Post</label>
+      <input type="text" id="title" name="title" placeholder="Introduce el título del post" required>
+
+      <label for="content">Contenido del Post</label>
+      <div class="toolbar">
+        <select class="toolbar-select">
+          <option>Roboto</option>
+          <option>Inter</option>
+          <option>Arial</option>
+        </select>
+        <select class="toolbar-select">
+          <option>Paragraph</option>
+          <option>Heading 1</option>
+          <option>Heading 2</option>
+        </select>
+        <button type="button" title="Negrita"><span class="material-icons">format_bold</span></button>
+        <button type="button" title="Cursiva"><span class="material-icons">format_italic</span></button>
+        <button type="button" title="Subrayado"><span class="material-icons">format_underlined</span></button>
+        <button type="button" title="Alinear izquierda"><span class="material-icons">format_align_left</span></button>
+        <button type="button" title="Alinear centro"><span class="material-icons">format_align_center</span></button>
+        <button type="button" title="Alinear derecha"><span class="material-icons">format_align_right</span></button>
+        <button type="button" title="Enlace"><span class="material-icons">link</span></button>
+      </div>
+      <textarea id="content" name="content" rows="6" placeholder="Aquí es donde se escribe la magia" required></textarea>
+
+      <button type="submit" class="submit-btn">
+        Enviar
+        <span class="material-icons" style="vertical-align: middle; font-size: 1.2em;">arrow_forward</span>
+      </button>
+    </form>
+  </main>
+</body>
+</html>
