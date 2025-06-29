@@ -1,51 +1,106 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es"> <!-- Definición del idioma español para mejorar SEO y accesibilidad -->
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog Post</title>
+    <!-- CONFIGURACIÓN BÁSICA DEL DOCUMENTO -->
+    <meta charset="UTF-8"> <!-- Codificación UTF-8 para soportar caracteres especiales y acentos -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Configuración responsive para dispositivos móviles -->
+    <title>Blog Post</title> <!-- Título que aparece en la pestaña del navegador -->
+    
+    <!-- FRAMEWORKS Y LIBRERÍAS EXTERNAS -->
+    <!-- Materialize CSS: Framework basado en Material Design de Google -->
+    <!-- Proporciona componentes prediseñados, grid system responsivo y efectos visuales modernos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    
+    <!-- CSS personalizado: Se carga después de Materialize para poder sobrescribir sus estilos -->
     <link rel="stylesheet" href="css/style.css">
+    
+    <!-- Google Fonts: Fuente Inter para mejor legibilidad y diseño moderno -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    
+    <!-- Material Icons: Librería de iconos vectoriales de Google -->
+    <!-- Permite usar iconos escalables y consistentes con Material Design -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 
+<<!-- Clase personalizada 'blog-bg' para aplicar estilos específicos al cuerpo de la página -->
 <body class="blog-bg">
+    <!-- HEADER: Sección de navegación principal -->
     <header class="blog-header">
+        <!-- 
+        NAVEGACIÓN PRINCIPAL:
+        - Estructura simple y limpia para facilitar la navegación
+        - Alineada a la derecha usando Flexbox para mejor UX
+        - Enlaces internos y externos para conectar páginas del sitio
+        -->
         <nav>
-            <a href="#" class="active">BLOG</a>
-            <a href="create.html">PUBLICA TU BLOG</a>
-            <a href="#">CONTACT</a>
+            <a href="#" class="active">BLOG</a> <!-- Página actual, marcada como activa -->
+            <a href="create.html">PUBLICA TU BLOG</a> <!-- Enlace al formulario de creación -->
+            <a href="#">CONTACT</a> <!-- Enlace a página de contacto (placeholder) -->
         </nav>
     </header>
+    
+    <!-- MAIN: Contenido principal del blog -->
     <main class="blog-main">
+        <!-- 
+        SECCIÓN HERO: Presentación principal del artículo
+        - Layout flexbox para diseño responsivo
+        - Combina texto e imagen de manera equilibrada
+        -->
         <section class="blog-hero">
+            <!-- CONTENIDO TEXTUAL DEL HERO -->
             <div class="blog-hero-text">
+                <!-- Título principal con salto de línea estratégico para mejor legibilidad -->
                 <h1>Diseño Web y Móvil:<br>Creando Experiencias Digitales Exitosas</h1>
+                
+                <!-- Metadatos del artículo: autor y fecha de publicación -->
                 <div class="blog-meta">Creado por Ana el 12/06/2025</div>
+                
+                <!-- Párrafo introductorio que engancha al lector y presenta el tema -->
                 <p>En el mundo digital actual, tener presencia online ya no es suficiente. Lo crucial es ofrecer una
                     experiencia de usuario excepcional, ya sea a través de una página web o una aplicación móvil.
                     ¿Sabías que el éxito de tu producto digital depende en gran medida de su diseño? Aquí te contamos
                     por qué y cómo lograrlo.</p>
             </div>
+            
+            <!-- IMAGEN DEL HERO -->
+            <!-- Imagen ilustrativa hospedada en servicio externo para optimizar rendimiento -->
             <div class="blog-hero-img">
-                <img src="https://placehold.co/220x180/ede3fa/222?text=Ilustración" alt="Ilustración">
+                <img src="https://i.ibb.co/5WCKGXvK/Screenshot-2025-06-29-175724.png" alt="Screenshot-2025-06-29-175724"
+                    alt="Ilustración">
             </div>
         </section>
+        <!-- 
+        SECCIÓN DE IMAGEN SECUNDARIA:
+        - Imagen complementaria para apoyar el contenido del artículo
+        - Hospedada externamente para optimizar la carga de la página
+        - Nota: El HTML contiene sintaxis incorrecta que debería corregirse
+        -->
         <section class="blog-image">
-            <img src="https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=900&q=80"
-                alt="Imagen principal">
+            <img <a href="https://ibb.co/TqL1DXMq"><img src="https://i.ibb.co/R4yNGnT4/Screenshot-2025-06-29-181606.png"
+                alt="Screenshot-2025-06-29-181606"></a>>
         </section>
+        
+        <!-- 
+        PRIMERA SECCIÓN DE CONTENIDO: Usabilidad y Accesibilidad
+        - Estructura semántica clara con h2 y listas
+        - Uso de elementos <b> para resaltar conceptos clave
+        - Contenido educativo sobre principios de diseño UX/UI
+        -->
         <section class="blog-content">
             <h2>La Clave está en la Usabilidad y la Accesibilidad</h2>
             <p>Dos pilares fundamentales para un diseño exitoso son la <b>usabilidad</b> y la <b>accesibilidad</b>.</p>
             <ul>
+                <!-- DEFINICIÓN DE USABILIDAD -->
                 <li>
                     <b>Usabilidad:</b> Se refiere a qué tan fácil, eficiente e intuitiva es una aplicación o sitio web
                     para sus usuarios. Un diseño usable permite que las personas aprendan rápidamente a usar la
                     herramienta, completen sus tareas de forma eficiente, recuerden cómo funciona incluso después de un
                     tiempo sin usarla, y que se sientan satisfechas con la experiencia, minimizando la frustración por
                     errores.
-                </li><br>
+                </li><br> <!-- Separador visual entre elementos de lista -->
+                
+                <!-- DEFINICIÓN DE ACCESIBILIDAD -->
                 <li>
                     <b>Accesibilidad:</b> Va un paso más allá, buscando que tu aplicación sea usable por la mayor
                     cantidad de personas posible, incluyendo aquellas con diversas capacidades. Principios como los de
@@ -56,11 +111,19 @@
                 </li>
             </ul>
         </section>
+        <!-- 
+        SEGUNDA SECCIÓN DE CONTENIDO: Tipos de Aplicaciones
+        - Comparación educativa entre aplicaciones web e independientes
+        - Mención específica de tecnologías relevantes (HTML5, CSS3, Materialize CSS)
+        - Información sobre desarrollo y consideraciones técnicas
+        -->
         <section class="blog-content">
             <h2>¿Aplicación web o aplicación independiente (Móvil)?</h2>
+            <!-- Nota: Hay un </b> sin apertura correspondiente que debería corregirse -->
             <p>La elección entre una aplicación web y una independiente (nativa para móviles o de escritorio) depende
                 mucho de tus objetivos. Ambas tienen características distintivas</b>:</p>
             <ul>
+                <!-- APLICACIONES WEB: Características y ventajas -->
                 <li>
                     <b>Aplicaciones Web:</b> Se acceden directamente desde un navegador y no requieren instalación. Son
                     versátiles, desarrolladas con tecnologías como HTML5 y CSS3 (a menudo usando frameworks como
@@ -68,6 +131,8 @@
                     rápido y las actualizaciones son centralizadas. Sin embargo, un sistema de navegación claro es vital
                     para que el usuario no se pierda.
                 </li><br>
+                
+                <!-- APLICACIONES INDEPENDIENTES: Características y consideraciones -->
                 <li>
                     <b>Aplicaciones Independientes (Nativas/Móviles):</b> Se instalan directamente en un dispositivo
                     (smartphone, tablet o PC) y se ejecutan de forma local. Estas aplicaciones suelen ofrecer
@@ -77,6 +142,13 @@
                     de software es una consideración importante.
                 </li>
             </ul>
+            
+            <!-- 
+            SECCIÓN FINAL: Conclusiones y Herramientas
+            - Anidada dentro de la sección anterior para mantener cohesión temática
+            - Menciona herramientas profesionales como Adobe XD
+            - Conclusión que resume los puntos clave del artículo
+            -->
             <section class="blog-content">
                 <h2 class="blog-final-title">El Diseño: Más Allá de lo Estético</h2>
                 <p>
@@ -91,8 +163,19 @@
                     efectivo, atractivo y, lo más importante, útil para todos tus usuarios.
                 </p>
             </section>
+            
+            <!-- PIE DE PÁGINA DEL ARTÍCULO: Información de autoría -->
+            <div class="blog-footer-meta">Creado por Ana el 12/06/2025</div>
     </main>
-    <div class="blog-footer-meta">Creado por Ana el 12/06/2025</div>
+
+    <!-- 
+    SCRIPTS JAVASCRIPT:
+    - Materialize JavaScript: Habilita la funcionalidad interactiva de componentes
+    - Se carga al final del body para optimizar el rendimiento de carga
+    - Permite usar features como modals, tooltips, efectos de ondas, etc.
+    - Inicialización automática de componentes básicos
+    -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 </body>
 
 </html>
