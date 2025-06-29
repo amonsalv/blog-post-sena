@@ -1,0 +1,197 @@
+/* Reset y estilos base para el formulario */
+* {
+    box-sizing: border-box;
+}
+
+body.form-bg {
+    background: linear-gradient(135deg, #C8A8E9 0%, #E8C5E5 100%);
+    margin: 0;
+    padding: 20px;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Inter', sans-serif;
+}
+
+.form-container {
+    width: 100%;
+    max-width: 550px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.post-form {
+    background: rgb(255, 255, 255);
+    border-radius: 20px;
+    padding: 40px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.form-title {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #333;
+    text-align: center;
+    margin: 0 0 30px 0;
+}
+
+.post-form label {
+    display: block;
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: #333;
+    margin-bottom: 8px;
+    margin-top: 20px;
+}
+
+.post-form label:first-of-type {
+    margin-top: 0;
+}
+
+.post-form input[type="text"] {
+    width: 100%;
+    max-width: 100%;
+    padding: 12px 16px;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    font-size: 0.95rem;
+    background: #ffffff;
+    transition: all 0.2s ease;
+    margin-bottom: 0;
+    box-sizing: border-box;
+}
+
+.post-form input[type="text"]:focus {
+    outline: none;
+    border-color: #2563eb;
+    background: white;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+.toolbar {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 12px;
+    background: #ffffff;
+    border: 1px solid #ffffff;
+    border-radius: 8px;
+    margin-bottom: 12px;
+    flex-wrap: wrap;
+}
+
+.toolbar-select {
+    padding: 4px 8px;
+    border: none;
+    background: transparent;
+    font-size: 0.85rem;
+    color: #666;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.toolbar-select:focus {
+    outline: none;
+    background: #e9ecef;
+}
+
+.toolbar button {
+    background: transparent;
+    border: none;
+    padding: 4px;
+    border-radius: 4px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.2s ease;
+}
+
+.toolbar button:hover {
+    background: #ffffff;
+}
+
+.toolbar button .material-icons {
+    font-size: 1.2rem;
+    color: #666;
+}
+
+#content {
+    width: 100%;
+    max-width: 100%;
+    padding: 16px;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    font-size: 0.95rem;
+    background: #ffffff;
+    resize: vertical;
+    min-height: 120px;
+    font-family: 'Inter', sans-serif;
+    transition: all 0.2s ease;
+    box-sizing: border-box;
+}
+
+#content:focus {
+    outline: none;
+    border-color: #2563eb;
+    background: white;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+#content::placeholder {
+    color: #999;
+    font-style: italic;
+}
+
+.submit-btn {
+    background: #2563eb;
+    color: white;
+    border: none;
+    padding: 14px 24px;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    margin: 30px auto 0 auto;
+    transition: all 0.2s ease;
+    font-family: 'Inter', sans-serif;
+}
+
+.submit-btn:hover {
+    background: #1d4ed8;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(37, 99, 235, 0.3);
+}
+
+.submit-btn .material-icons {
+    vertical-align: middle;
+    font-size: 1.2em;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    .form-container {
+        padding: 0 15px;
+    }
+    
+    .post-form {
+        padding: 30px 25px;
+        border-radius: 15px;
+    }
+    
+    .toolbar {
+        gap: 4px;
+        padding: 6px 8px;
+    }
+    
+    .toolbar button .material-icons {
+        font-size: 1.1rem;
+    }
+}

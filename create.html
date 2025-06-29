@@ -1,51 +1,115 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es"> <!-- Definimos el idioma español para accesibilidad -->
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Pública tu post</title>
-  <link rel="stylesheet" href="css/style.css">
+  <!-- Configuración básica del documento -->
+  <meta charset="UTF-8"> <!-- Codificación de caracteres UTF-8 para soportar acentos y caracteres especiales -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Configuración responsive para dispositivos móviles -->
+  <title>Pública tu post</title> <!-- Título que aparece en la pestaña del navegador -->
+  
+  <!-- LIBRERÍAS EXTERNAS -->
+  <!-- Materialize CSS: Framework CSS basado en Material Design para componentes modernos -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  
+  <!-- CSS personalizado: Estilos específicos para esta página -->
+  <link rel="stylesheet" href="css/create.css">
+  
+  <!-- Google Fonts: Fuente Inter para tipografía moderna y legible -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
-  <!-- Iconos de Material Icons -->
+  
+  <!-- Material Icons: Librería de iconos de Google para botones de la barra de herramientas -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
+<<!-- Clase form-bg aplicada al body para el fondo degradado -->
 <body class="form-bg">
+  <!-- CONTENEDOR PRINCIPAL: Centraliza y limita el ancho del formulario -->
   <main class="form-container">
+    <!-- FORMULARIO DE CREACIÓN DE BLOG POST -->
     <form class="post-form">
+      <!-- Título principal del formulario -->
       <h1 class="form-title">Pública tu Blog</h1>
+      
+      <!-- SECCIÓN 1: INFORMACIÓN DEL AUTOR -->
+      <!-- Campo para capturar el nombre del autor del blog post -->
       <label for="author">Nombre del autor</label>
-      <input type="text" id="author" name="author" placeholder="Ana" required>
+      <input type="text" id="author" name="author" placeholder="Introduce tu nombre" required>
 
+      <!-- SECCIÓN 2: TÍTULO DEL POST -->
+      <!-- Campo para el título principal del artículo/blog post -->
       <label for="title">Título del Post</label>
       <input type="text" id="title" name="title" placeholder="Introduce el título del post" required>
 
+      <!-- SECCIÓN 3: CONTENIDO DEL BLOG -->
       <label for="content">Contenido del Blog</label>
+      
+      <!-- BARRA DE HERRAMIENTAS: Opciones de formato para el contenido -->
       <div class="toolbar">
+        <!-- Selector de fuente tipográfica -->
         <select class="toolbar-select">
-          <option>Roboto</option>
-          <option>Inter</option>
-          <option>Arial</option>
+          <option>Roboto</option>    <!-- Fuente sans-serif moderna -->
+          <option>Inter</option>     <!-- Fuente optimizada para legibilidad -->
+          <option>Arial</option>     <!-- Fuente clásica universal -->
         </select>
+        
+        <!-- Selector de estilo de párrafo -->
         <select class="toolbar-select">
-          <option>Paragraph</option>
-          <option>Heading 1</option>
-          <option>Heading 2</option>
+          <option>Paragraph</option>  <!-- Texto normal -->
+          <option>Heading 1</option>  <!-- Título principal -->
+          <option>Heading 2</option>  <!-- Subtítulo -->
         </select>
+        
+        <!-- BOTONES DE FORMATO DE TEXTO -->
+        <!-- Negrita: Para resaltar texto importante -->
         <button type="button" title="Negrita"><span class="material-icons">format_bold</span></button>
+        
+        <!-- Cursiva: Para énfasis o citas -->
         <button type="button" title="Cursiva"><span class="material-icons">format_italic</span></button>
+        
+        <!-- Subrayado: Para destacar información relevante -->
         <button type="button" title="Subrayado"><span class="material-icons">format_underlined</span></button>
+        
+        <!-- BOTONES DE ALINEACIÓN DE TEXTO -->
+        <!-- Alineación izquierda: Formato estándar de lectura -->
         <button type="button" title="Alinear izquierda"><span class="material-icons">format_align_left</span></button>
+        
+        <!-- Alineación centro: Para títulos o contenido destacado -->
         <button type="button" title="Alinear centro"><span class="material-icons">format_align_center</span></button>
+        
+        <!-- Alineación derecha: Para fechas o firmas -->
         <button type="button" title="Alinear derecha"><span class="material-icons">format_align_right</span></button>
+        
+        <!-- Botón para insertar enlaces/hipervínculos -->
         <button type="button" title="Enlace"><span class="material-icons">link</span></button>
       </div>
+      <!-- ÁREA DE TEXTO PRINCIPAL -->
+      <!-- 
+        Textarea para escribir el contenido del blog:
+        - rows="6": Define la altura inicial del área de texto
+        - required: Campo obligatorio para enviar el formulario
+        - placeholder: Texto de ayuda que aparece cuando está vacío
+      -->
       <textarea id="content" name="content" rows="6" placeholder="Aquí es donde se escribe la magia" required></textarea>
 
+      <!-- BOTÓN DE ENVÍO -->
+      <!-- 
+        Botón para enviar el formulario:
+        - type="submit": Activa la funcionalidad de envío del formulario
+        - class="submit-btn": Aplica estilos personalizados
+        - Incluye icono de flecha para mejor UX
+      -->
       <button type="submit" class="submit-btn">
         Enviar
-        <span class="material-icons" style="vertical-align: middle; font-size: 1.2em;">arrow_forward</span>
+        <span class="material-icons">arrow_forward</span>
       </button>
     </form>
   </main>
+  
+  <!-- SCRIPTS JAVASCRIPT -->
+  <!-- 
+    Materialize JavaScript: 
+    - Habilita la funcionalidad interactiva de los componentes
+    - Debe cargarse al final del body para mejor rendimiento
+    - Permite usar componentes como selectors, modales, tooltips, etc.
+  -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 </body>
 </html>
